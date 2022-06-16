@@ -1,9 +1,13 @@
 <header>
-  <h1>{{ title }}</h1>
+  <p>{{title}}</p>
+
+  <!-- 這是新增按鈕 -->
   <app-button
     *ngIf="hasRoute('/')"
     color="{{ showAddTask ? 'red' : 'green' }}"
     text="{{ showAddTask ? 'Close' : 'Add' }}"
     (btnClick)="toggleAddTask()"
   ></app-button>
+
 </header>
+

@@ -1,4 +1,7 @@
+<!-- 這裡取不到task，因為不存在，所以可以改用$event -->
 <app-add-task (onAddTask)="addTask($event)"></app-add-task>
+
+<!-- loop over tasks 然後把task傳進去task item的property -->
 <app-task-item
   *ngFor="let task of tasks"
   [task]="task"

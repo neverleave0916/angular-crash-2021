@@ -11,9 +11,7 @@ describe('TaskItemComponent', () => {
       declarations: [ TaskItemComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(TaskItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
